@@ -15,11 +15,40 @@ def registroDecoders():
 
         cierre= input("desea garegar a otro estudiante? y(sì) no(n)")
         if cierre == "n":
-            fin = False
+            fin = True
     listadeDatos=[]
     listadeDatos.append(nombres);listadeDatos.append(meses);listadeDatos.append(grupos);listadeDatos.append(edades)
 
     return listadeDatos
+
+def asistencia(listaEstudiante=[]):
+    asistencia={}
+    cierre=False
+
+    #___________________________________
+    #agregar estudiantes al diccionario
+
+    for estudiante in listaEstudiante:
+        asistencia[estudiante]=None
+    #____________________________________    
+    #registrode asistencia
+    while cierre ==False:
+
+
+        cedula=input("cedula del estudiante ")
+        faltas=input("numero de faltas")
+        asistencia[cedula]=faltas
+
+        fin= input("desea garegar a otro estudiante? y(sì) no(n)")
+        if fin == "n":
+            cierre = True
+    return asistencia        
+
+        
+
+
+
+
 
 
 def duplicados(lista1=[],lista2=[]):
