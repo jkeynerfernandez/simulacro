@@ -88,7 +88,7 @@ def listarCoders(listaDeCoders=[]):
         print("|",nombres[i],"|",meses[i],"|",grupos[i],"|",edades[i],"|",cedulas[i],"|")
 
 
-def cambioDeEstudiante(lista1=[],lista2=[]):
+def cambioDeEstudiante(destino="",lista1=[],lista2=[]):
 
     arregloFinal=[] #este arreglo tendrá las listas finales ya modificadas
 
@@ -113,7 +113,7 @@ def cambioDeEstudiante(lista1=[],lista2=[]):
     #datos del estudiante a cambiar
     nombre=nombres1[indice]
     mes=meses1[indice]
-    grupo=grupos1[indice]
+    grupo=destino
     edad=edades1[indice]
     cedula=cedulas1[indice]
     #__________________________________
@@ -127,7 +127,8 @@ def cambioDeEstudiante(lista1=[],lista2=[]):
     
     grupos1.pop(indice)
     grupos2.append(grupo)
-#    grupos2[indice]=grupos1[indice]
+    
+
     
 
     edades1.pop(indice)

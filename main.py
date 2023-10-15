@@ -6,7 +6,7 @@ codersGrupoC=[["flor","milena","bola8"],["enero","febrero","marzo"],["c","c","c"
 cerrar=False
 while cerrar == False:
 
-    case=input("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+    case=input("¿Que desea hacer?\n1.crear lista estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
 
     match case:
@@ -14,14 +14,14 @@ while cerrar == False:
             grupo=input("grupo al que desea agregar estudiantes: (A)(B)(C)")
             match grupo:
                 case "a":
-                    codersGrupoA=registroDecoders()
+                    codersGrupoA= registroDecoders()
                     listarCoders(codersGrupoA)
                     continuar=input("cerrar programa?: sì (y) no(n)")
 
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista deestudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
                     
                 case "b":
                     codersGrupoB=registroDecoders()
@@ -31,7 +31,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
                 case "c":
                     codersGrupoC=registroDecoders()
@@ -41,7 +41,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
         
         
@@ -75,7 +75,7 @@ while cerrar == False:
             if continuar == "y":
                 cerrar = True
             else:    
-                case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                case=print("¿Que desea hacer?\n1.crear lista de estudiantes \n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
 
         case "3":
@@ -95,7 +95,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
 
 
@@ -114,7 +114,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
                    
                 case "c":
@@ -130,7 +130,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
         case "4":
             mostrar = input("lista del grupo que desea mostrat (A)(B)(C) Todos (T)")
@@ -144,7 +144,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
                
                 case "b":
                     listarCoders(codersGrupoB)
@@ -154,7 +154,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
              
                 case "c":
                     listarCoders(codersGrupoC)
@@ -164,7 +164,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
                
                 case "t":
                     listarCoders(codersGrupoA)            
@@ -176,7 +176,7 @@ while cerrar == False:
                     if continuar == "y":
                         cerrar = True
                     else:    
-                        case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                        case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
         case "5":
             listarCoders(codersGrupoA)            
@@ -200,7 +200,7 @@ while cerrar == False:
             else:
                 listaDestino=codersGrupoC
 
-            cambioRealizado=cambioDeEstudiante(listaOrigen,listaDestino) #
+            cambioRealizado=cambioDeEstudiante(destino,listaOrigen,listaDestino) #
 
             if origen=="a":
                 codersGrupoA=cambioRealizado[0]
@@ -225,7 +225,7 @@ while cerrar == False:
             if continuar == "y":
                cerrar = True
             else:    
-                case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+                case=print("¿Que desea hacer?\n1.crear lista de estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
               
            
 
