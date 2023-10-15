@@ -1,7 +1,7 @@
 from funciones import *
-codersGrupoA=[]
-codersGrupoB=[]
-codersGrupoC=[]
+codersGrupoA=[["juan","keyner","fernandez"],["enero","febrero","marzo"],["a","a","a"],[18,19,20],["123","456","789"]]
+codersGrupoB=[["gabriel","caldera","hincapie"],["enero","febrero","marzo"],["b","b","b"],[18,19,20],["987","654","321"]]
+codersGrupoC=[["flor","milena","bola8"],["enero","febrero","marzo"],["c","c","c"],[18,19,20],["369","258","147"]]
 
 cerrar=False
 while cerrar == False:
@@ -179,6 +179,61 @@ while cerrar == False:
                         case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
 
         case "5":
+            listarCoders(codersGrupoA)            
+            listarCoders(codersGrupoB)
+            listarCoders(codersGrupoC)
+
+            origen=input("lista de origen del estudiante: (A)(B)(C) ")
+            destino=input("lista de destino del estudiante: (A)(B)(C) ")
+
+            if origen=="a":
+                listaOrigen=codersGrupoA
+            elif origen=="b":
+                listaOrigen=codersGrupoB
+            else:
+                listaOrigen=codersGrupoC
+
+            if destino =="a":
+                listaDestino=codersGrupoA
+            elif destino=="b":
+                listaDestino=codersGrupoB
+            else:
+                listaDestino=codersGrupoC
+
+            cambioRealizado=cambioDeEstudiante(listaOrigen,listaDestino) #
+
+            if origen=="a":
+                codersGrupoA=cambioRealizado[0]
+            elif origen=="b":
+                codersGrupoB=cambioRealizado[0]
+            else:
+                codersGrupoC=cambioRealizado[0]
+
+            if destino=="a":
+                codersGrupoA=cambioRealizado[1]
+            elif destino=="b":
+                codersGrupoB=cambioRealizado[1]
+            else:
+                codersGrupoC=cambioRealizado[1]
+
+            listarCoders(codersGrupoA)            
+            listarCoders(codersGrupoB)
+            listarCoders(codersGrupoC) 
+
+            continuar=input("cerrar programa?: sì (y) no(n)")
+                    
+            if continuar == "y":
+               cerrar = True
+            else:    
+                case=print("¿Que desea hacer?\n1.Agregar estudiantes\n2.Buscar coders duplicados en dos grupos\n3.eliminar coders por insistencia\n4.ver lista de estudiantes\n5.Cambiar estudiante de grupo\n")
+              
+           
+
+
+
+
+            
+
 
             
 

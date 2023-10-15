@@ -62,14 +62,6 @@ def eliminarEstudiantes(disccionario={},nombres=[],meses=[],grupos=[],edades=[],
     nuevaListaDeEstudiantes.append(nombres);nuevaListaDeEstudiantes.append(meses);nuevaListaDeEstudiantes.append(grupos);nuevaListaDeEstudiantes.append(edades);nuevaListaDeEstudiantes.append(listaDeCedulas)
 
     return nuevaListaDeEstudiantes                
-            
-    
-
-        
-
-
-
-
 
 
 def duplicados(lista1=[],lista2=[]):
@@ -94,6 +86,72 @@ def listarCoders(listaDeCoders=[]):
 
     for i in range(len(nombres)):
         print("|",nombres[i],"|",meses[i],"|",grupos[i],"|",edades[i],"|",cedulas[i],"|")
+
+
+def cambioDeEstudiante(lista1=[],lista2=[]):
+
+    arregloFinal=[] #este arreglo tendrá las listas finales ya modificadas
+
+    #la lista1 es en donde está el estudiante y la lista2 es en donde se quire reubicar
+
+    #usuarios de la primera lista
+    nombres1=lista1[0]
+    meses1=lista1[1]
+    grupos1=lista1[2]
+    edades1=lista1[3]
+    cedulas1=lista1[4]
+    #usuarios de la segunda lista
+    nombres2=lista2[0]
+    meses2=lista2[1]
+    grupos2=lista2[2]
+    edades2=lista2[3]
+    cedulas2=lista2[4]
+    #_________________________________________________
+
+    identificacion=input("identificacion del esudiante que desea hacer el cambio: ")
+    indice=cedulas1.index(identificacion)#tengo el indice de la posiscion del estudiante en la lista
+    #datos del estudiante a cambiar
+    nombre=nombres1[indice]
+    mes=meses1[indice]
+    grupo=grupos1[indice]
+    edad=edades1[indice]
+    cedula=cedulas1[indice]
+    #__________________________________
+
+    nombres1.pop(indice)
+    nombres2.append(nombre)
+
+    meses1.pop(indice)
+    meses2.append(mes)
+
+    
+    grupos1.pop(indice)
+    grupos2.append(grupo)
+#    grupos2[indice]=grupos1[indice]
+    
+
+    edades1.pop(indice)
+    edades2.append(edad)
+
+    cedulas1.pop(indice)
+    cedulas2.append(cedula)
+
+    lista1.append(nombres1);lista1.append(meses1);lista1.append(grupos1);lista1.append(edades1);lista1.append(cedulas1)
+    lista2.append(nombres2);lista2.append(meses2);lista2.append(grupos2);lista2.append(edades2);lista2.append(cedulas2)
+
+    arregloFinal.append(lista1);arregloFinal.append(lista2)
+
+    return arregloFinal  
+    
+
+
+
+
+
+
+
+
+
 
 
     
