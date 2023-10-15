@@ -26,25 +26,44 @@ def registroDecoders():
 def asistencia(listaEstudiante=[]):
     asistencia={}
     cierre=False
-
-    #___________________________________
-    #agregar estudiantes al diccionario
-
-    for estudiante in listaEstudiante:
-        asistencia[estudiante]=None
-    #____________________________________    
+        
     #registrode asistencia
     while cierre ==False:
 
 
         cedula=input("cedula del estudiante ")
-        faltas=input("numero de faltas")
+        faltas=int(input("numero de faltas"))
         asistencia[cedula]=faltas
 
-        fin= input("desea garegar a otro estudiante? y(sì) no(n)")
-        if fin == "n":
+        fin= input("desea agregar asistencia a  otro estudiante? y(sì) no(n)")
+        if fin == "y":
+            cierre = False
+        else:
             cierre = True
+            break    
+
     return asistencia        
+
+def eliminarEstudiantes(disccionario={},nombres=[],meses=[],grupos=[],edades=[],listaDeCedulas=[]):
+
+    nuevaListaDeEstudiantes=[]
+    disccionario=asistencia(listaDeCedulas)
+
+    for identidad in  disccionario:
+        if disccionario[identidad]>=15:
+            indice = listaDeCedulas.index(identidad)
+
+            listaDeCedulas.remove(listaDeCedulas[indice])
+            nombres.remove(nombres[indice])
+            meses.remove(meses[indice])
+            grupos.remove(grupos[indice])
+            edades.remove(edades[indice])
+
+    nuevaListaDeEstudiantes.append(nombres);nuevaListaDeEstudiantes.append(meses);nuevaListaDeEstudiantes.append(grupos);nuevaListaDeEstudiantes.append(edades);nuevaListaDeEstudiantes.append(listaDeCedulas)
+
+    return nuevaListaDeEstudiantes                
+            
+    
 
         
 
